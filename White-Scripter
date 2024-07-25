@@ -1,0 +1,105 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("1 FAT EVERY SECOND", "DarkTheme")
+local Tab = Window:NewTab("SCRIPT")
+local Section = Tab:NewSection("NOTE: THIS INF WINS & COLLECT ALL FOOD NEVER STOP IT")
+Section:NewButton("INF WINS", "ButtonInfo", function()
+while true do 
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1390.2356, 920.000183, -908.92865, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end
+    print("Clicked")
+end)
+Section:NewButton("COLLECT ALL FOOD", "ButtonInfo", function()
+
+local args = {
+    [1] = true,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage").Events.COLLECT.COLLECT:InvokeServer(unpack(args))
+
+    print("Clicked")
+end)
+local Tab = Window:NewTab("EGG")
+local Section = Tab:NewSection("PETS HATCH")
+Section:NewButton("Egg 1", "ButtonInfo", function()
+
+local args = {
+    [1] = workspace.Pet:FindFirstChild("World 1"),
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Events.OpenPet:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+Section:NewButton("Egg 2", "ButtonInfo", function()
+
+local args = {
+    [1] = workspace.Pet:FindFirstChild("World 2"),
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Events.OpenPet:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+Section:NewButton("Egg 3", "ButtonInfo", function()
+
+local args = {
+    [1] = workspace.Pet:FindFirstChild("World 3"),
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Events.OpenPet:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+Section:NewButton("Egg 4", "ButtonInfo", function()
+
+local args = {
+    [1] = workspace.Pet:FindFirstChild("World 4"),
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Events.OpenPet:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+Section:NewButton("Egg 5", "ButtonInfo", function()
+
+local args = {
+    [1] = workspace.Pet:FindFirstChild("World 5"),
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Events.OpenPet:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+Section:NewButton("Egg 6", "ButtonInfo", function()
+
+local args = {
+    [1] = workspace.Pet:FindFirstChild("World 6"),
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Events.OpenPet:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Credits 🤓")
+local Section = Tab:NewSection("White-Scripter")
+Section:NewButton("White-Scripter", "ButtonInfo", function()
+
+    print("Clicked")
+end)
+Section:NewKeybind("Keybind", "F", Enum.KeyCode.F, function()
+    Library:ToggleUI()
+end)
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("Misc")
+
+Section:NewSlider("Speed", "SliderInfo", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
